@@ -1,0 +1,168 @@
+:root {
+     
+--Green-500: hsl(158, 36%, 37%);
+--Green-700: hsl(158, 42%, 18%);
+
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./design/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url(./design/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+body {
+ background: var(--Cream);
+ margin: 1rem;
+ margin-top: 2rem;
+
+}
+    .container {
+    background: var(--White);
+    border-radius: 0.5rem;
+    border: solid;
+    border-style: none;
+    padding-bottom: 1em;
+    }
+
+    .perfume {
+        color: var(--Grey);
+    }
+
+    #btn-txt {
+    margin: 1em;
+    color: var(--White);
+}
+
+#cart-icon {
+    color: var(--Black);
+}
+
+.btn-span {
+    
+}
+
+.p-txt {
+   font-family: Montserrat;
+    font-weight: 500;
+    margin: 1.5rem;
+    font-size: 0.8em;
+    color: var(--Grey);
+}
+
+
+
+button {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    background: var(--Green-500);
+    width: 85%;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1em;
+    border-style: none;
+   
+}
+
+button:hover {
+    background: var(--Green-700);
+    
+}
+
+
+.mobile-img {
+    max-width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin: 1.5rem;
+    margin-top: -0.3em;
+    margin-bottom: -0.3em;
+}
+span {
+    font-family: Fraunces;
+ font-weight: 700;
+
+}
+.perfume {
+   margin: 1.5rem;
+}
+#original-price {
+    font-weight: 350;
+    text-decoration: line-through;
+    color: var(--Grey);
+    
+}
+
+.price {
+    color: var(--Green-500);
+    font-size: 2em;
+    margin: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: -1em;
+}
+
+.desktop-img {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-img {
+        display: none;
+    }
+    body {
+        height: 100%;
+        width: 65rem;
+        padding: 8rem;
+    }
+ .desktop-img {
+    height: 50rem;
+}
+     .col {  
+    display: flex; 
+    flex: 1;
+     }
+     .col2 {
+        flex-direction: column;
+        margin: 1rem;
+     }
+     .container {
+        padding-bottom: 0;
+        justify-self: center;
+
+     }
+     #btn-txt {
+        font-size: 1.5re;
+     }
+
+    button,.price,h1,.p-txt {
+       margin-top: 5rem;
+     }
+     h1 {
+         font-size: 3.5rem;
+     }
+     .p-txt {
+        font-size: 1.5rem;
+     }
+     button {
+        width: 70%;
+     }
+
+}
